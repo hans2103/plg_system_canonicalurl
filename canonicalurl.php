@@ -25,7 +25,7 @@ class plgSystemCanonicalurl extends JPlugin
      * This plugin should be loaded after Joomla! SEF plugin
      * Order can be set in Joomla! backend
      *
-     * Using trigger onAfterRoute since Joomla! SEF plugin uses this one too
+     * Using trigger onContentBeforeDisplay because it provides the needed $article and $params information
      */
     function onContentBeforeDisplay($article, $params, $limitstart)
     {
