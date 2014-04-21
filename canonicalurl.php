@@ -36,7 +36,8 @@ class plgSystemCanonicalurl extends JPlugin
         $doc     = JFactory::getDocument();
 
         // stop this plugin when you are in admin
-        if ($app->isAdmin()) {
+        if ($app->isAdmin())
+        {
             return;
         }
 
