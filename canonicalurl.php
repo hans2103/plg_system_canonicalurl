@@ -27,7 +27,7 @@ class plgSystemCanonicalurl extends JPlugin
      *
      * Using trigger onContentBeforeDisplay because it provides the needed $article and $params information
      */
-    function onContentBeforeDisplay($article, $params, $limitstart)
+    public function onContentBeforeDisplay($article, $params, $limitstart)
     {
         $app     = JFactory::getApplication();
         $jinput  = $app->input;
